@@ -1,0 +1,33 @@
+# azure-pipelines.yml
+
+trigger: none  # No CI trigger — only scheduled
+
+schedules:
+  - cron: "30 10 * * 3"   # Every Wednesday at 4:00 PM IST (UTC+5:30 → 10:30 UTC)
+    displayName: Weekly Wednesday Run
+    branches:
+      include:
+        - main
+    always: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: UseJava@1
+    inputs:
+      version: '17'  # Or 11 if your project uses Java 11
+      architecture: 'x64'
+
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean test'
+      options: '-DsuiteXmlFile=testng.xml'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      testRunTitle: 'SauceDemo TestNG Results'
