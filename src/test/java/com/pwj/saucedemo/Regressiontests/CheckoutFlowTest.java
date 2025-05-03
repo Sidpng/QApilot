@@ -5,7 +5,7 @@
 // Creation Date     : 01-May-2025
 // Description       : Consolidated TestNG class to verify the entire checkout process and all cancel points.
 
-package com.pwj.saucedemo.tests;
+package com.pwj.saucedemo.Regressiontests;
 
 import com.pwj.saucedemo.base.BaseTest;
 import com.pwj.saucedemo.pages.*;

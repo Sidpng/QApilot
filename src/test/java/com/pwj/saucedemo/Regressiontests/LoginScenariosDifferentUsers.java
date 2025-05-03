@@ -5,7 +5,7 @@
 // Creation Date     : 01-May-2025
 // Description       : TestNG test class to validate login behavior for different types of users on SauceDemo.
 
-package com.pwj.saucedemo.tests;
+package com.pwj.saucedemo.Regressiontests;
 
 import com.microsoft.playwright.Locator;
 import com.pwj.saucedemo.base.BaseTest;

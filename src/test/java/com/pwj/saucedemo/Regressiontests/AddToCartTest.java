@@ -9,7 +9,7 @@
  */
 
 
-package com.pwj.saucedemo.tests;
+package com.pwj.saucedemo.Regressiontests;
 
 import com.microsoft.playwright.*;
 import com.pwj.saucedemo.base.BaseTest;

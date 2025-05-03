@@ -1,4 +1,4 @@
-package com.pwj.saucedemo.tests;
+package com.pwj.saucedemo.Regressiontests;
 
 import com.pwj.saucedemo.base.BaseTest;
 import com.pwj.saucedemo.pages.SauceDemoHomePage;
