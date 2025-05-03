@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Grouped Test Suite" verbose="1" parallel="false">
+
+	<listeners>
+		<listener class-name="com.pwj.saucedemo.utilities.TestListener" />
+	</listeners>
+
+
+	<!-- Grouped Regression Tests -->
+	<test name="Regression Group">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
+			<class
+				name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
+			<class name="com.pwj.saucedemo.tests.LoginScenariosDifferentUsers" />
+			<class name="com.pwj.saucedemo.tests.AddToCartTest" />
+			<class name="com.pwj.saucedemo.tests.CheckoutFlowTest" />
+		</classes>
+	</test>
+
+</suite>

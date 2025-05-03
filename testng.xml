@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="SauceDemo Test Suite" verbose="1" parallel="false">
+	<listeners>
+		<listener class-name="com.pwj.saucedemo.utilities.TestListener" />
+	</listeners>
+
 
 	<!-- Login and Checkout Tests -->
 	<test name="Login and Checkout Tests">
@@ -25,8 +29,10 @@
 	<!-- Full Order Regression Tests -->
 	<test name="Order Placement Tests">
 		<classes>
-			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
-			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
+			<class
+				name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
+			<class
+				name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
 		</classes>
 	</test>
 

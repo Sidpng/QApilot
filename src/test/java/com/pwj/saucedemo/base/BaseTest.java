@@ -33,7 +33,7 @@ public abstract class BaseTest {
 	protected Playwright playwright;
 	protected Browser browser;
 	protected BrowserContext context;
-	protected Page page;
+	public Page page;
 	protected ExtentReports extent;
 	protected ExtentTest test;
 	protected Logger logger;
