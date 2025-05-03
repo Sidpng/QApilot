@@ -3,6 +3,7 @@
 
 <suite name="SauceDemo Test Suite" verbose="1" parallel="false">
 
+	<!-- Login and Checkout Tests -->
 	<test name="Login and Checkout Tests">
 		<classes>
 			<class name="com.pwj.saucedemo.tests.SauceDemoStandardUserLogin" />
@@ -17,8 +18,15 @@
 					<include name="testInvalidUserLogin" />
 				</methods>
 			</class>
-			<!-- Consolidated checkout test class -->
 			<class name="com.pwj.saucedemo.tests.CheckoutFlowTest" />
+		</classes>
+	</test>
+
+	<!-- Full Order Regression Tests -->
+	<test name="Order Placement Tests">
+		<classes>
+			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
+			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
 		</classes>
 	</test>
 
