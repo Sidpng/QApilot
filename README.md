@@ -1,83 +1,81 @@
 
-# SauceDemo Automation Framework – Playwright with Java
+# SauceDemo Playwright Automation Framework
 
-This is a Playwright-based automation framework written in Java for end-to-end testing of the [SauceDemo](https://www.saucedemo.com/) web application. The framework follows the Page Object Model (POM) design pattern and is structured for scalability, readability, and maintainability.
-
----
-
-##  Features
-
-- Automated login testing for multiple user types
-- Add-to-cart and cart validation
-- Full checkout flow (Step 1 → Step 2 → Confirmation) with one unified page object
-- Reusable POM structure
-- TestNG for test management and grouping
-- Easy integration into CI/CD pipelines
+A scalable and hybrid automation testing framework using **Playwright with Java**, built for the [SauceDemo](https://www.saucedemo.com/) application.
 
 ---
 
-##  Technology Stack
+## Features
 
-- **Language:** Java
-- **Test Framework:** TestNG
-- **Automation Engine:** Playwright for Java
-- **Build Tool:** Maven
-- **Design Pattern:** Page Object Model (POM)
+- **Playwright with Java** integration
+- **Page Object Model (POM)** for modular, maintainable code
+- **TestNG** for structured test execution and grouping
+- **Extent Reports** with rich UI, screenshots, and logs
+- **Log4j2** for granular logging across test levels
+- **RetryAnalyzer** to auto-retry flaky tests (configurable)
+- **TestNG groups** and XML filters (e.g., regression, sanity, order)
+- **Regression flow by user type** (e.g., `standard_user`, `visual_user`)
+- **CI/CD-ready**: Jenkins pipeline with schedule triggers
+- **Screenshots on failure**, saved and attached to reports
+- **Well-organized packages**: base, pages, tests, utilities
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 src
 └── test
     └── java
-        ├── base
-        │   └── BaseTest.java
-        ├── pages
-        │   ├── SauceDemoHomePage.java
-        │   ├── InventoryPage.java
-        │   ├── CartPage.java
-        │   └── CheckoutFlowPage.java         #  Unified checkout handler
-        └── tests
-            ├── SauceDemoStandardUserLogin.java
-            ├── SauceDemoInvalidLoginTest.java
-            ├── LoginScenariosDifferentUsers.java
-            ├── AddToCartTest.java
-            └── CheckoutFlowTest.java         # Consolidated checkout test class
+        ├── base                     # BaseTest with Playwright setup
+        ├── pages                    # POM classes: LoginPage, CartPage, etc.
+        ├── tests                    # Feature-specific test classes
+        ├── tests.Orderplaced_tests # Regression: full order flow per user
+        └── utilities                # Logger, ExtentManager, RetryAnalyzer
 ```
 
 ---
 
 ##  Test Execution
 
-To run all tests:
-
+###  Run all tests:
 ```bash
-mvn test -DsuiteXmlFile=testng.xml
+mvn clean test -DsuiteXmlFile=testng.xml
 ```
 
-TestNG suite includes:
-- All login test scenarios
-- Cart validation
-- Optimized full checkout flow in a single test class
+###  Run regression tests only:
+```bash
+mvn clean test -DsuiteXmlFile=testng-groups.xml
+```
 
 ---
 
-##  Notes
+##  Reports
 
-- `CheckoutFlowPage.java` replaces previous individual page files for:
-  - `CheckoutPage.java`
-  - `CheckoutOverviewPage.java`
-  - `CheckoutCompletePage.java`
-- `CheckoutFlowTest.java` replaces:
-  - `CheckoutTest.java`
-  - `CheckoutOverviewTest.java`
-  - `CheckoutCompleteTest.java`
+- HTML Report: `test-output/ExtentReport.html`
+- Screenshots: `test-output/screenshots/`
+- Logs via Log4j2 console/file output
+
+---
+
+##  Jenkins CI/CD
+
+- Runs every **Wednesday at 4 PM IST**
+- Pulls latest code, runs Maven suite, generates report
+- Optional: archive screenshots and test-output in build
 
 ---
 
 ##  Author
 
 **Siddhartha Upadhyay**  
-GitHub: [@Sidpng](https://github.com/Sidpng)
+GitHub: [Sidpng](https://github.com/Sidpng)  
+Framework version: May 2025
+
+---
+
+## Notes
+
+- Designed for interview-ready demonstration
+- Focused on modularity, debugging, CI/CD readiness
+- Expandable for API, BDD, or cross-browser testing
