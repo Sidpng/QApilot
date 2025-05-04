@@ -25,7 +25,7 @@ release.properties
 .DS_Store
 Thumbs.db
 
-# Playwright (if using any local storage or results)
+# Playwright
 playwright-report/
 test-results/
 
