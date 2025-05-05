@@ -3,7 +3,7 @@
 trigger: none  # No CI trigger — only scheduled
 
 schedules:
-  - cron: "30 10 * * 3"   # Every Wednesday at 4:00 PM IST (UTC+5:30 → 10:30 UTC)
+  - cron: "30 10 * * 3"   # Every Wednesday at 4:00 PM IST
     displayName: Weekly Wednesday Run
     branches:
       include:

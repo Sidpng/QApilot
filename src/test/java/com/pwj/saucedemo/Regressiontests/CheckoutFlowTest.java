@@ -1,7 +1,7 @@
 // Project Title     : SauceDemo Automation Framework using Playwright with Java
 // File Name         : CheckoutFlowTest.java
 // Author Name       : Siddhartha Upadhyay
-// GitHub Link       : https://github.com/YourUsername/saucedemo-playwright-java
+// GitHub Link       : https://github.com/Sidpng/com.pwj.saucedemo.git
 // Creation Date     : 01-May-2025
 // Description       : Consolidated TestNG class to verify the entire checkout process and all cancel points.
 

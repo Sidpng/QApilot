@@ -5,8 +5,6 @@
 	<listeners>
 		<listener class-name="com.pwj.saucedemo.utilities.TestListener" />
 	</listeners>
-
-
 	<!-- Login and Checkout Tests -->
 	<test name="Login and Checkout Tests">
 		<classes>
@@ -25,15 +23,11 @@
 			<class name="com.pwj.saucedemo.tests.CheckoutFlowTest" />
 		</classes>
 	</test>
-
 	<!-- Full Order Regression Tests -->
 	<test name="Order Placement Tests">
 		<classes>
-			<class
-				name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
-			<class
-				name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
+			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
+			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
 		</classes>
 	</test>
-
 </suite>

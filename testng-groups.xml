@@ -6,8 +6,6 @@
 	<listeners>
 		<listener class-name="com.pwj.saucedemo.utilities.TestListener" />
 	</listeners>
-
-
 	<!-- Grouped Regression Tests -->
 	<test name="Regression Group">
 		<groups>
@@ -16,14 +14,11 @@
 			</run>
 		</groups>
 		<classes>
-			<class
-				name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
-			<class
-				name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
+			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest" />
+			<class name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest" />
 			<class name="com.pwj.saucedemo.tests.LoginScenariosDifferentUsers" />
 			<class name="com.pwj.saucedemo.tests.AddToCartTest" />
 			<class name="com.pwj.saucedemo.tests.CheckoutFlowTest" />
 		</classes>
 	</test>
-
 </suite>
