@@ -9,67 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">57,626</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,314</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pwj.saucedemo.tests.Orderplaced_tests.PerformanceGlitchUserOrderTest</td><td><a href="#m0">testPerformanceGlitchUserOrderFlow</a></td><td rowspan="1">1746285641212</td><td rowspan="1">38089</td></tr><tr class="failedodd"><td rowspan="1">com.pwj.saucedemo.tests.Orderplaced_tests.ProblemUserOrderTest</td><td><a href="#m1">testProblemUserOrderFlow</a></td><td rowspan="1">1746285684621</td><td rowspan="1">261</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.pwj.saucedemo.tests.AddToCartTest</td><td><a href="#m2">testAddFirstProductToCart</a></td><td rowspan="1">1746285639545</td><td rowspan="1">165</td></tr><tr class="passedodd"><td rowspan="3">com.pwj.saucedemo.tests.CheckoutFlowTest</td><td><a href="#m3">testCancelFromOverviewStep</a></td><td rowspan="1">1746285632690</td><td rowspan="1">371</td></tr><tr class="passedodd"><td><a href="#m4">testCancelFromStepOne</a></td><td rowspan="1">1746285634802</td><td rowspan="1">273</td></tr><tr class="passedodd"><td><a href="#m5">testFullCheckoutFlow</a></td><td rowspan="1">1746285637613</td><td rowspan="1">394</td></tr><tr class="passedeven"><td rowspan="1">com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest</td><td><a href="#m6">testStandardUserOrderFlow</a></td><td rowspan="1">1746285682665</td><td rowspan="1">422</td></tr><tr class="passedodd"><td rowspan="1">com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest</td><td><a href="#m7">testVisualUserOrderFlow</a></td><td rowspan="1">1746285680836</td><td rowspan="1">436</td></tr><tr class="passedeven"><td rowspan="1">com.pwj.saucedemo.tests.SauceDemoInvalidLoginTest</td><td><a href="#m8">testInvalidLoginShowsErrorMessage</a></td><td rowspan="1">1746285686385</td><td rowspan="1">64</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.pwj.saucedemo.Regressiontests.AddToCartTest</td><td><a href="#m0">testAddFirstProductToCart</a></td><td rowspan="1">1746483136378</td><td rowspan="1">158</td></tr><tr class="passedodd"><td rowspan="3">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest</td><td><a href="#m1">testCancelFromOverviewStep</a></td><td rowspan="1">1746483130790</td><td rowspan="1">347</td></tr><tr class="passedodd"><td><a href="#m2">testCancelFromStepOne</a></td><td rowspan="1">1746483132736</td><td rowspan="1">266</td></tr><tr class="passedodd"><td><a href="#m3">testFullCheckoutFlow</a></td><td rowspan="1">1746483134413</td><td rowspan="1">405</td></tr><tr class="passedeven"><td rowspan="1">com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest</td><td><a href="#m4">testInvalidLoginShowsErrorMessage</a></td><td rowspan="1">1746483138069</td><td rowspan="1">77</td></tr><tr class="passedodd"><td rowspan="1">com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest</td><td><a href="#m5">testStandardUserOrderFlow</a></td><td rowspan="1">1746483128770</td><td rowspan="1">428</td></tr><tr class="passedeven"><td rowspan="1">com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest</td><td><a href="#m6">testVisualUserOrderFlow</a></td><td rowspan="1">1746483126590</td><td rowspan="1">460</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.pwj.saucedemo.tests.Orderplaced_tests.PerformanceGlitchUserOrderTest#testPerformanceGlitchUserOrderFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/progress.js:75:26)
-    at Frame.click (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/frames.js:1022:23)
-    at FrameDispatcher.click (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/dispatchers/dispatcher.js:96:40)
-    at DispatcherConnection.dispatch (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/dispatchers/dispatcher.js:366:39)
-}
-Call log:
--   - waiting for locator(&quot;#login-button&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
-	at com.microsoft.playwright.Locator.click(Locator.java:2508)
-	at com.pwj.saucedemo.pages.SauceDemoHomePage.clickLogin(SauceDemoHomePage.java:55)
-	at com.pwj.saucedemo.tests.Orderplaced_tests.PerformanceGlitchUserOrderTest.testPerformanceGlitchUserOrderFlow(PerformanceGlitchUserOrderTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/progress.js:75:26)
-    at Frame.click (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/frames.js:1022:23)
-    at FrameDispatcher.click (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/dispatchers/dispatcher.js:96:40)
-    at DispatcherConnection.dispatch (/private/var/folders/r5/m0v18bws6nq20j1xkhvy8yh80000gn/T/playwright-java-12790374809849998463/package/lib/server/dispatchers/dispatcher.js:366:39)
-}
-Call log:
--   - waiting for locator(&quot;#login-button&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 44 more
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.pwj.saucedemo.tests.Orderplaced_tests.ProblemUserOrderTest#testProblemUserOrderFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Summary should be visible expected [true] but found [false]
-	at com.pwj.saucedemo.tests.Orderplaced_tests.ProblemUserOrderTest.testProblemUserOrderFlow(ProblemUserOrderTest.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.pwj.saucedemo.tests.AddToCartTest#testAddFirstProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.pwj.saucedemo.tests.CheckoutFlowTest#testCancelFromOverviewStep</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.pwj.saucedemo.tests.CheckoutFlowTest#testCancelFromStepOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.pwj.saucedemo.tests.CheckoutFlowTest#testFullCheckoutFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest#testStandardUserOrderFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest#testVisualUserOrderFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.pwj.saucedemo.tests.SauceDemoInvalidLoginTest#testInvalidLoginShowsErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.pwj.saucedemo.Regressiontests.AddToCartTest#testAddFirstProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest#testCancelFromOverviewStep</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest#testCancelFromStepOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest#testFullCheckoutFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest#testInvalidLoginShowsErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest#testStandardUserOrderFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest#testVisualUserOrderFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
