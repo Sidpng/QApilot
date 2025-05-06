@@ -8,10 +8,10 @@
 	<!-- Login and Checkout Tests -->
 	<test name="Login and Checkout Tests">
 		<classes>
-			<class name="com.pwj.saucedemo.tests.SauceDemoStandardUserLogin" />
-			<class name="com.pwj.saucedemo.tests.SauceDemoInvalidLoginTest" />
-			<class name="com.pwj.saucedemo.tests.AddToCartTest" />
-			<class name="com.pwj.saucedemo.tests.LoginScenariosDifferentUsers">
+			<class name="com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin" />
+			<class name="com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest" />
+			<class name="com.pwj.saucedemo.Regressiontests.AddToCartTest" />
+			<class name="com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers">
 				<methods>
 					<include name="testStandardUserLogin" />
 					<include name="testLockedOutUserLogin" />
@@ -20,7 +20,7 @@
 					<include name="testInvalidUserLogin" />
 				</methods>
 			</class>
-			<class name="com.pwj.saucedemo.tests.CheckoutFlowTest" />
+			<class name="com.pwj.saucedemo.Regressiontests.CheckoutFlowTest" />
 		</classes>
 	</test>
 	<!-- Full Order Regression Tests -->

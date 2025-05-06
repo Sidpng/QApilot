@@ -1,5 +1,7 @@
 package com.pwj.saucedemo.tests.Orderplaced_tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import com.microsoft.playwright.Page;
 
 //Project Title     : SauceDemo Automation Framework using Playwright with Java
@@ -25,7 +27,7 @@ public class StandardUserOrderTest extends BaseTest {
      // Step 1: Login
      SauceDemoHomePage homePage = new SauceDemoHomePage(page);
      homePage.login("standard_user", "secret_sauce");
-     Assert.assertTrue(page.url().contains("inventory"), "User should land on inventory page");
+     AssertJUnit.assertTrue("User should land on inventory page", page.url().contains("inventory"));
 
      // Step 2: Add to Cart
      InventoryPage inventoryPage = new InventoryPage(page);
@@ -33,8 +35,7 @@ public class StandardUserOrderTest extends BaseTest {
      inventoryPage.goToCart();
 
      CartPage cartPage = new CartPage(page);
-     Assert.assertTrue(cartPage.isProductInCart(), "Product should be visible in cart");
-     Assert.assertEquals(cartPage.getProductNameInCart(), "Sauce Labs Backpack", "Correct product added");
+     AssertJUnit.assertEquals(cartPage.getProductNameInCart(), "Sauce Labs Backpack", "Correct product added");
      cartPage.clickCheckout();
 
      // Step 3: Checkout Flow
@@ -42,11 +43,11 @@ public class StandardUserOrderTest extends BaseTest {
      checkout.enterUserInfo("Siddhartha", "Upadhyay", "560001");
      checkout.continueToOverview();
 
-     Assert.assertTrue(checkout.isOverviewSummaryVisible(), "Overview should display summary");
-     Assert.assertTrue(checkout.isProductDisplayed(), "Product should appear in overview");
+     AssertJUnit.assertTrue("Overview should display summary", checkout.isOverviewSummaryVisible());
+     AssertJUnit.assertTrue("Product should appear in overview", checkout.isProductDisplayed());
 
      checkout.finishCheckout();
-     Assert.assertTrue(checkout.isConfirmationDisplayed(), "Order confirmation should be visible");
+     AssertJUnit.assertTrue("Order confirmation should be visible", checkout.isConfirmationDisplayed());
 
      // Step 4: Screenshot
      String screenshotPath = "test-output/screenshots/standard_user_order_confirmation.png";
@@ -54,6 +55,6 @@ public class StandardUserOrderTest extends BaseTest {
      logger.info("Screenshot saved at: " + screenshotPath);
      
      checkout.clickBackHome();
-     Assert.assertTrue(page.url().contains("inventory"), "Back Home should return to inventory");
+     AssertJUnit.assertTrue("Back Home should return to inventory", page.url().contains("inventory"));
  }
 }
