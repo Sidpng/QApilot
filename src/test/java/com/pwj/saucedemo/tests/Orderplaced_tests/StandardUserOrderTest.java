@@ -13,8 +13,6 @@ import com.microsoft.playwright.Page;
 
 import com.pwj.saucedemo.base.BaseTest;
 import com.pwj.saucedemo.pages.*;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import java.nio.file.Paths;
 
@@ -35,7 +33,7 @@ public class StandardUserOrderTest extends BaseTest {
      inventoryPage.goToCart();
 
      CartPage cartPage = new CartPage(page);
-     AssertJUnit.assertEquals(cartPage.getProductNameInCart(), "Sauce Labs Backpack", "Correct product added");
+     AssertJUnit.assertEquals("Correct product added", cartPage.getProductNameInCart(), "Sauce Labs Backpack");
      cartPage.clickCheckout();
 
      // Step 3: Checkout Flow

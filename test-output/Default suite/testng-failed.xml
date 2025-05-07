@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pwj.saucedemo.tests.SauceDemoStandardUserLogin">
+      <class name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testStandardUserLogin"/>
+          <include name="testStandardUserOrderFlow"/>
         </methods>
-      </class> <!-- com.pwj.saucedemo.tests.SauceDemoStandardUserLogin -->
+      </class> <!-- com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
