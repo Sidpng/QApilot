@@ -15,9 +15,9 @@ A scalable and hybrid automation testing framework using **Playwright with Java*
 - **RetryAnalyzer** to auto-retry flaky tests (configurable)
 - **TestNG groups** and XML filters (e.g., regression, sanity, order)
 - **Regression flow by user type** (e.g., `standard_user`, `visual_user`)
-- **CI/CD-ready**: Jenkins pipeline with schedule triggers
-- **Screenshots on failure**, saved and attached to reports
-- **Well-organized packages**: base, pages, tests, utilities
+- **CI/CD-ready** Jenkins pipeline with schedule triggers
+- **Screenshots on failure** saved and attached to reports
+- **Well-organized packages** base, pages, tests, utilities
 
 ---
 
