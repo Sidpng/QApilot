@@ -6,6 +6,19 @@
 	<artifactId>com.pwj.saucedemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<!-- Java + encoding -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Runtime defaults (override with -Dkey=value) -->
+		<headless>true</headless>
+		<browser>chromium</browser>
+		<trace>retain-on-failure</trace> <!-- off | on | retain-on-failure -->
+		<video>off</video>
+	</properties>
+
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
@@ -46,25 +59,24 @@
 
 	<build>
 		<plugins>
-			<!-- Maven Compiler Plugin -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version> <!-- Or latest -->
-				<configuration>
-					<source>23</source> <!-- Your Java version -->
-					<target>23</target>
-				</configuration>
-			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.2.5</version> <!-- Latest stable version -->
+				<version>3.2.5</version>
 				<configuration>
-					<includes>
-						<include>**/*Test.java</include>
-					</includes>
+					<!-- Run the suite file, not **/*Test.java -->
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<!-- Pass defaults as system properties (can be overridden
+					via CLI) -->
+					<systemPropertyVariables>
+						<headless>${headless}</headless>
+						<browser>${browser}</browser>
+						<trace>${trace}</trace>
+						<video>${video}</video>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>

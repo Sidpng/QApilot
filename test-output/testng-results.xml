@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T01:09:09 IST" name="SauceDemo Test Suite" finished-at="2025-08-12T01:09:44 IST" duration-ms="34847">
+  <suite started-at="2025-08-12T01:41:51 IST" name="SauceDemo Test Suite" finished-at="2025-08-12T01:42:20 IST" duration-ms="29369">
     <groups>
     </groups>
-    <test started-at="2025-08-12T01:09:09 IST" name="Login and Checkout Tests" finished-at="2025-08-12T01:09:39 IST" duration-ms="30350">
+    <test started-at="2025-08-12T01:41:51 IST" name="Login and Checkout Tests" finished-at="2025-08-12T01:42:16 IST" duration-ms="25833">
       <class name="com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@147e2ae7]" started-at="2025-08-12T01:09:14 IST" name="setUp" finished-at="2025-08-12T01:09:15 IST" duration-ms="1453" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@26bab2f1]" started-at="2025-08-12T01:41:56 IST" name="setUp" finished-at="2025-08-12T01:41:57 IST" duration-ms="1103" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest.testInvalidLoginShowsErrorMessage()]]>
+                <![CDATA[[Ljava.lang.Object;@20e3c449]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLoginShowsErrorMessage()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@147e2ae7]" started-at="2025-08-12T01:09:15 IST" name="testInvalidLoginShowsErrorMessage" finished-at="2025-08-12T01:09:15 IST" duration-ms="111" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@26bab2f1]" started-at="2025-08-12T01:41:57 IST" name="testInvalidLoginShowsErrorMessage" finished-at="2025-08-12T01:41:57 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@147e2ae7]" started-at="2025-08-12T01:09:15 IST" name="tearDown" finished-at="2025-08-12T01:09:15 IST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@26bab2f1]" started-at="2025-08-12T01:41:57 IST" name="tearDown" finished-at="2025-08-12T01:41:57 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLoginShowsErrorMessage status=SUCCESS method=SauceDemoInvalidLoginTest.testInvalidLoginShowsErrorMessage()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@147e2ae7] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidLoginShowsErrorMessage status=SUCCESS method=SauceDemoInvalidLoginTest.testInvalidLoginShowsErrorMessage()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest@26bab2f1] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,130 +35,130 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest -->
       <class name="com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:17 IST" name="setUp" finished-at="2025-08-12T01:09:19 IST" duration-ms="1524" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:41:59 IST" name="setUp" finished-at="2025-08-12T01:42:00 IST" duration-ms="1043" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testStandardUserLogin()]]>
+                <![CDATA[[Ljava.lang.Object;@56f521c6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:19 IST" name="testStandardUserLogin" description="Valid login with standard_user" finished-at="2025-08-12T01:09:19 IST" duration-ms="113" status="PASS">
+        <test-method signature="testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:00 IST" name="testStandardUserLogin" description="Valid login with standard_user" finished-at="2025-08-12T01:42:00 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:19 IST" name="tearDown" finished-at="2025-08-12T01:09:19 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:00 IST" name="tearDown" finished-at="2025-08-12T01:42:00 IST" duration-ms="31" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:19 IST" name="setUp" finished-at="2025-08-12T01:09:21 IST" duration-ms="1484" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:00 IST" name="setUp" finished-at="2025-08-12T01:42:01 IST" duration-ms="1196" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testLockedOutUserLogin()]]>
+                <![CDATA[[Ljava.lang.Object;@680a66dd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLockedOutUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:21 IST" name="testLockedOutUserLogin" description="Locked out user should see error" finished-at="2025-08-12T01:09:21 IST" duration-ms="111" status="PASS">
+        <test-method signature="testLockedOutUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:01 IST" name="testLockedOutUserLogin" description="Locked out user should see error" finished-at="2025-08-12T01:42:01 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLockedOutUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:21 IST" name="tearDown" finished-at="2025-08-12T01:09:21 IST" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:01 IST" name="tearDown" finished-at="2025-08-12T01:42:01 IST" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLockedOutUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testLockedOutUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=testLockedOutUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testLockedOutUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:21 IST" name="setUp" finished-at="2025-08-12T01:09:22 IST" duration-ms="1473" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:01 IST" name="setUp" finished-at="2025-08-12T01:42:03 IST" duration-ms="1266" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testProblemUserLogin()]]>
+                <![CDATA[[Ljava.lang.Object;@2dd8239]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProblemUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:22 IST" name="testProblemUserLogin" description="Problem user login — expected to succeed but may show broken UI later" finished-at="2025-08-12T01:09:23 IST" duration-ms="118" status="PASS">
+        <test-method signature="testProblemUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:03 IST" name="testProblemUserLogin" description="Problem user login — expected to succeed but may show broken UI later" finished-at="2025-08-12T01:42:03 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProblemUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:23 IST" name="tearDown" finished-at="2025-08-12T01:09:23 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:03 IST" name="tearDown" finished-at="2025-08-12T01:42:03 IST" duration-ms="30" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProblemUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testProblemUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=testProblemUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testProblemUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:23 IST" name="setUp" finished-at="2025-08-12T01:09:24 IST" duration-ms="1621" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:03 IST" name="setUp" finished-at="2025-08-12T01:42:04 IST" duration-ms="1199" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testPerformanceGlitchUserLogin()]]>
+                <![CDATA[[Ljava.lang.Object;@472698d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testPerformanceGlitchUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:24 IST" name="testPerformanceGlitchUserLogin" description="Performance glitch user may require second click to login" finished-at="2025-08-12T01:09:31 IST" duration-ms="6598" status="PASS">
+        <test-method signature="testPerformanceGlitchUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:04 IST" name="testPerformanceGlitchUserLogin" description="Performance glitch user may require second click to login" finished-at="2025-08-12T01:42:11 IST" duration-ms="6643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPerformanceGlitchUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:31 IST" name="tearDown" finished-at="2025-08-12T01:09:31 IST" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:11 IST" name="tearDown" finished-at="2025-08-12T01:42:11 IST" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testPerformanceGlitchUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testPerformanceGlitchUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=testPerformanceGlitchUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testPerformanceGlitchUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:31 IST" name="setUp" finished-at="2025-08-12T01:09:33 IST" duration-ms="1487" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:11 IST" name="setUp" finished-at="2025-08-12T01:42:12 IST" duration-ms="1162" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testInvalidUserLogin()]]>
+                <![CDATA[[Ljava.lang.Object;@7b7683d4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:33 IST" name="testInvalidUserLogin" description="Invalid user login should display error" finished-at="2025-08-12T01:09:33 IST" duration-ms="104" status="PASS">
+        <test-method signature="testInvalidUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:12 IST" name="testInvalidUserLogin" description="Invalid user login should display error" finished-at="2025-08-12T01:42:12 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6]" started-at="2025-08-12T01:09:33 IST" name="tearDown" finished-at="2025-08-12T01:09:33 IST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359]" started-at="2025-08-12T01:42:12 IST" name="tearDown" finished-at="2025-08-12T01:42:12 IST" duration-ms="28" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testInvalidUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidUserLogin status=SUCCESS method=LoginScenariosDifferentUsers.testInvalidUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers@68ead359] output={null}]]]>
               </value>
             </param>
           </params>
@@ -167,26 +167,26 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers -->
       <class name="com.pwj.saucedemo.Regressiontests.AddToCartTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@448c8166]" started-at="2025-08-12T01:09:15 IST" name="setUp" finished-at="2025-08-12T01:09:17 IST" duration-ms="1567" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@3724af13]" started-at="2025-08-12T01:41:57 IST" name="setUp" finished-at="2025-08-12T01:41:59 IST" duration-ms="1216" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.AddToCartTest.testAddFirstProductToCart()]]>
+                <![CDATA[[Ljava.lang.Object;@40712ee9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddFirstProductToCart()[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@448c8166]" started-at="2025-08-12T01:09:17 IST" name="testAddFirstProductToCart" finished-at="2025-08-12T01:09:17 IST" duration-ms="200" status="PASS">
+        <test-method signature="testAddFirstProductToCart()[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@3724af13]" started-at="2025-08-12T01:41:59 IST" name="testAddFirstProductToCart" finished-at="2025-08-12T01:41:59 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddFirstProductToCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@448c8166]" started-at="2025-08-12T01:09:17 IST" name="tearDown" finished-at="2025-08-12T01:09:17 IST" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@3724af13]" started-at="2025-08-12T01:41:59 IST" name="tearDown" finished-at="2025-08-12T01:41:59 IST" duration-ms="64" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAddFirstProductToCart status=SUCCESS method=AddToCartTest.testAddFirstProductToCart()[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@448c8166] output={null}]]]>
+                <![CDATA[[TestResult name=testAddFirstProductToCart status=SUCCESS method=AddToCartTest.testAddFirstProductToCart()[pri:0, instance:com.pwj.saucedemo.Regressiontests.AddToCartTest@3724af13] output={null}]]]>
               </value>
             </param>
           </params>
@@ -195,78 +195,78 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.pwj.saucedemo.Regressiontests.AddToCartTest -->
       <class name="com.pwj.saucedemo.Regressiontests.CheckoutFlowTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:33 IST" name="setUp" finished-at="2025-08-12T01:09:34 IST" duration-ms="1441" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:12 IST" name="setUp" finished-at="2025-08-12T01:42:13 IST" duration-ms="1058" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testCancelFromOverviewStep()]]>
+                <![CDATA[[Ljava.lang.Object;@2e53b094]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCancelFromOverviewStep()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:34 IST" name="testCancelFromOverviewStep" description="Cancel from overview page should return to inventory" finished-at="2025-08-12T01:09:35 IST" duration-ms="364" status="PASS">
+        <test-method signature="testCancelFromOverviewStep()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:13 IST" name="testCancelFromOverviewStep" description="Cancel from overview page should return to inventory" finished-at="2025-08-12T01:42:13 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelFromOverviewStep -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:35 IST" name="tearDown" finished-at="2025-08-12T01:09:35 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:13 IST" name="tearDown" finished-at="2025-08-12T01:42:13 IST" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCancelFromOverviewStep status=SUCCESS method=CheckoutFlowTest.testCancelFromOverviewStep()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048] output={null}]]]>
+                <![CDATA[[TestResult name=testCancelFromOverviewStep status=SUCCESS method=CheckoutFlowTest.testCancelFromOverviewStep()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:35 IST" name="setUp" finished-at="2025-08-12T01:09:37 IST" duration-ms="1736" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:13 IST" name="setUp" finished-at="2025-08-12T01:42:15 IST" duration-ms="1270" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testCancelFromStepOne()]]>
+                <![CDATA[[Ljava.lang.Object;@39fa8ad2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCancelFromStepOne()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:37 IST" name="testCancelFromStepOne" description="Cancel from Step One should return to cart page" finished-at="2025-08-12T01:09:37 IST" duration-ms="291" status="PASS">
+        <test-method signature="testCancelFromStepOne()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:15 IST" name="testCancelFromStepOne" description="Cancel from Step One should return to cart page" finished-at="2025-08-12T01:42:15 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelFromStepOne -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:37 IST" name="tearDown" finished-at="2025-08-12T01:09:37 IST" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:15 IST" name="tearDown" finished-at="2025-08-12T01:42:15 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCancelFromStepOne status=SUCCESS method=CheckoutFlowTest.testCancelFromStepOne()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048] output={null}]]]>
+                <![CDATA[[TestResult name=testCancelFromStepOne status=SUCCESS method=CheckoutFlowTest.testCancelFromStepOne()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:37 IST" name="setUp" finished-at="2025-08-12T01:09:39 IST" duration-ms="1479" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:15 IST" name="setUp" finished-at="2025-08-12T01:42:16 IST" duration-ms="1164" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testFullCheckoutFlow()]]>
+                <![CDATA[[Ljava.lang.Object;@76ddd61a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFullCheckoutFlow()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:39 IST" name="testFullCheckoutFlow" description="Complete checkout from cart to order confirmation" finished-at="2025-08-12T01:09:39 IST" duration-ms="406" status="PASS">
+        <test-method signature="testFullCheckoutFlow()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:16 IST" name="testFullCheckoutFlow" description="Complete checkout from cart to order confirmation" finished-at="2025-08-12T01:42:16 IST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFullCheckoutFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048]" started-at="2025-08-12T01:09:39 IST" name="tearDown" finished-at="2025-08-12T01:09:39 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2]" started-at="2025-08-12T01:42:16 IST" name="tearDown" finished-at="2025-08-12T01:42:16 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testFullCheckoutFlow status=SUCCESS method=CheckoutFlowTest.testFullCheckoutFlow()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@15d49048] output={null}]]]>
+                <![CDATA[[TestResult name=testFullCheckoutFlow status=SUCCESS method=CheckoutFlowTest.testFullCheckoutFlow()[pri:0, instance:com.pwj.saucedemo.Regressiontests.CheckoutFlowTest@6b53bcc2] output={null}]]]>
               </value>
             </param>
           </params>
@@ -275,26 +275,26 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.pwj.saucedemo.Regressiontests.CheckoutFlowTest -->
       <class name="com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@7bbc8656]" started-at="2025-08-12T01:09:09 IST" name="setUp" finished-at="2025-08-12T01:09:13 IST" duration-ms="4450" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@6622fc65]" started-at="2025-08-12T01:41:51 IST" name="setUp" finished-at="2025-08-12T01:41:56 IST" duration-ms="5205" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin.testStandardUserLogin()]]>
+                <![CDATA[[Ljava.lang.Object;@3f92a84e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@7bbc8656]" started-at="2025-08-12T01:09:13 IST" name="testStandardUserLogin" finished-at="2025-08-12T01:09:13 IST" duration-ms="107" status="PASS">
+        <test-method signature="testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@6622fc65]" started-at="2025-08-12T01:41:56 IST" name="testStandardUserLogin" finished-at="2025-08-12T01:41:56 IST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@7bbc8656]" started-at="2025-08-12T01:09:13 IST" name="tearDown" finished-at="2025-08-12T01:09:14 IST" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@6622fc65]" started-at="2025-08-12T01:41:56 IST" name="tearDown" finished-at="2025-08-12T01:41:56 IST" duration-ms="43" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardUserLogin status=SUCCESS method=SauceDemoStandardUserLogin.testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@7bbc8656] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardUserLogin status=SUCCESS method=SauceDemoStandardUserLogin.testStandardUserLogin()[pri:0, instance:com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin@6622fc65] output={null}]]]>
               </value>
             </param>
           </params>
@@ -303,28 +303,28 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin -->
     </test> <!-- Login and Checkout Tests -->
-    <test started-at="2025-08-12T01:09:39 IST" name="Order Placement Tests" finished-at="2025-08-12T01:09:44 IST" duration-ms="4461">
+    <test started-at="2025-08-12T01:42:17 IST" name="Order Placement Tests" finished-at="2025-08-12T01:42:20 IST" duration-ms="3406">
       <class name="com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@18ece7f4]" started-at="2025-08-12T01:09:39 IST" name="setUp" finished-at="2025-08-12T01:09:41 IST" duration-ms="1411" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@704f1591]" started-at="2025-08-12T01:42:17 IST" name="setUp" finished-at="2025-08-12T01:42:18 IST" duration-ms="1255" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest.testStandardUserOrderFlow()]]>
+                <![CDATA[[Ljava.lang.Object;@cf67838]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testStandardUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@18ece7f4]" started-at="2025-08-12T01:09:41 IST" name="testStandardUserOrderFlow" description="Regression test for standard_user to place a full order successfully" finished-at="2025-08-12T01:09:41 IST" duration-ms="443" status="PASS">
+        <test-method signature="testStandardUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@704f1591]" started-at="2025-08-12T01:42:18 IST" name="testStandardUserOrderFlow" description="Regression test for standard_user to place a full order successfully" finished-at="2025-08-12T01:42:18 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardUserOrderFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@18ece7f4]" started-at="2025-08-12T01:09:41 IST" name="tearDown" finished-at="2025-08-12T01:09:41 IST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@704f1591]" started-at="2025-08-12T01:42:18 IST" name="tearDown" finished-at="2025-08-12T01:42:18 IST" duration-ms="26" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardUserOrderFlow status=SUCCESS method=StandardUserOrderTest.testStandardUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@18ece7f4] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardUserOrderFlow status=SUCCESS method=StandardUserOrderTest.testStandardUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest@704f1591] output={null}]]]>
               </value>
             </param>
           </params>
@@ -333,26 +333,26 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest -->
       <class name="com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@3cce57c7]" started-at="2025-08-12T01:09:41 IST" name="setUp" finished-at="2025-08-12T01:09:43 IST" duration-ms="1798" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@58fb7731]" started-at="2025-08-12T01:42:18 IST" name="setUp" finished-at="2025-08-12T01:42:20 IST" duration-ms="1314" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest.testVisualUserOrderFlow()]]>
+                <![CDATA[[Ljava.lang.Object;@6137cf6e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testVisualUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@3cce57c7]" started-at="2025-08-12T01:09:43 IST" name="testVisualUserOrderFlow" description="Regression test for visual_user to complete an order successfully" finished-at="2025-08-12T01:09:43 IST" duration-ms="446" status="PASS">
+        <test-method signature="testVisualUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@58fb7731]" started-at="2025-08-12T01:42:20 IST" name="testVisualUserOrderFlow" description="Regression test for visual_user to complete an order successfully" finished-at="2025-08-12T01:42:20 IST" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVisualUserOrderFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@3cce57c7]" started-at="2025-08-12T01:09:43 IST" name="tearDown" finished-at="2025-08-12T01:09:44 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@58fb7731]" started-at="2025-08-12T01:42:20 IST" name="tearDown" finished-at="2025-08-12T01:42:20 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testVisualUserOrderFlow status=SUCCESS method=VisualUserOrderTest.testVisualUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@3cce57c7] output={null}]]]>
+                <![CDATA[[TestResult name=testVisualUserOrderFlow status=SUCCESS method=VisualUserOrderTest.testVisualUserOrderFlow()[pri:0, instance:com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest@58fb7731] output={null}]]]>
               </value>
             </param>
           </params>
