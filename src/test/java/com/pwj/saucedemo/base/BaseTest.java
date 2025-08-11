@@ -26,7 +26,7 @@ public abstract class BaseTest {
     protected Playwright playwright;
     protected Browser browser;
     protected BrowserContext context;
-    protected Page page;
+    public Page page;
 
     // ThreadLocals for safe parallel execution
     private static final ThreadLocal<Playwright> TL_PLAYWRIGHT = new ThreadLocal<>();
