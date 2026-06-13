@@ -8,6 +8,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    name: test (${{ matrix.browser }})
     steps:
       - uses: actions/checkout@v4
 
@@ -21,21 +26,21 @@ jobs:
       - name: Compile
         run: mvn -B -ntp compile
 
-      - name: Install Playwright browsers (chromium + deps)
+      - name: Install Playwright browser (${{ matrix.browser }} + deps)
         run: >
           mvn -B -ntp org.codehaus.mojo:exec-maven-plugin:3.1.0:java
           -Dexec.mainClass=com.microsoft.playwright.CLI
           -Dexec.classpathScope=test
-          -Dexec.args="install --with-deps chromium"
+          -Dexec.args="install --with-deps ${{ matrix.browser }}"
 
-      - name: Run TestNG suite (headless)
-        run: mvn -B -ntp test -Dheadless=true -Dbrowser=chromium
+      - name: Run TestNG suite (${{ matrix.browser }}, headless)
+        run: mvn -B -ntp test -Dheadless=true -Dbrowser=${{ matrix.browser }}
 
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-output
+          name: test-output-${{ matrix.browser }}
           path: |
             test-output/
             target/surefire-reports/
