@@ -1,0 +1,70 @@
+name: nightly-regression
+
+# Runs the suite every day and commits a test-health record.
+# This produces ONE real daily commit (a genuine nightly regression run),
+# authored as you, so it counts toward your contribution graph.
+#
+# IMPORTANT: for the auto-commit to count on your graph, add a Personal Access
+# Token as a repo secret named PUSH_TOKEN (fine-grained, this repo, Contents:RW).
+# Without it the run still executes but skips the commit.
+
+on:
+  schedule:
+    - cron: "30 1 * * *"   # 01:30 UTC daily (~07:00 IST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PUSH_TOKEN || github.token }}
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Compile
+        run: mvn -B -ntp compile
+
+      - name: Install Playwright browsers
+        run: >
+          mvn -B -ntp org.codehaus.mojo:exec-maven-plugin:3.1.0:java
+          -Dexec.mainClass=com.microsoft.playwright.CLI
+          -Dexec.classpathScope=test
+          -Dexec.args="install --with-deps chromium"
+
+      - name: Run suite (don't fail the job on test failures)
+        id: run
+        continue-on-error: true
+        run: mvn -B -ntp test -Dheadless=true -Dbrowser=chromium
+
+      - name: Record run in runs/history.md
+        run: |
+          mkdir -p runs
+          DATE=$(date -u +%Y-%m-%d)
+          # tally pass/fail from surefire output if present
+          PASS=$(grep -rhoE "Tests run: [0-9]+" target/surefire-reports/*.txt 2>/dev/null | grep -oE "[0-9]+" | paste -sd+ - | bc 2>/dev/null || echo "?")
+          FAIL=$(grep -rhoE "Failures: [0-9]+, Errors: [0-9]+" target/surefire-reports/*.txt 2>/dev/null | grep -oE "[0-9]+" | paste -sd+ - | bc 2>/dev/null || echo "?")
+          STATUS="${{ steps.run.outcome }}"
+          if [ ! -f runs/history.md ]; then printf "# Nightly regression history\n\n| Date | Tests run | Failures+Errors | Status | Run |\n|---|---|---|---|---|\n" > runs/history.md; fi
+          printf "| %s | %s | %s | %s | [%s](../../actions/runs/%s) |\n" "$DATE" "${PASS:-?}" "${FAIL:-?}" "$STATUS" "${{ github.run_id }}" "${{ github.run_id }}" >> runs/history.md
+
+      - name: Commit the record
+        run: |
+          git config user.name "Siddhartha Upadhyay"
+          git config user.email "60257474+Sidpng@users.noreply.github.com"
+          git add runs/history.md
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "nightly: regression run $(date -u +%Y-%m-%d)"
+            git push
+          fi

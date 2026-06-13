@@ -1,7 +1,12 @@
 
-# SauceDemo Playwright Automation Framework
+# QApilot — AI-Paired Playwright Automation Framework
 
-A scalable and hybrid automation testing framework using **Playwright with Java**, built for the [SauceDemo](https://www.saucedemo.com/) application.
+[![playwright-ci](https://github.com/Sidpng/QApilot/actions/workflows/ci.yml/badge.svg)](https://github.com/Sidpng/QApilot/actions/workflows/ci.yml)
+[![nightly-regression](https://github.com/Sidpng/QApilot/actions/workflows/nightly.yml/badge.svg)](https://github.com/Sidpng/QApilot/actions/workflows/nightly.yml)
+
+A scalable, hybrid automation testing framework using **Playwright with Java**, built for the [SauceDemo](https://www.saucedemo.com/) application — and developed in active pair-collaboration with AI (Claude / GitHub Copilot) for test design, refactoring, and CI automation.
+
+> **QApilot** = QA on autopilot: a maintained Playwright framework with CI on every push and a nightly regression run that records its own test-health history.
 
 ---
 
@@ -58,11 +63,15 @@ mvn clean test -DsuiteXmlFile=testng-groups.xml
 
 ---
 
-##  Jenkins CI/CD
+##  CI/CD
 
-- Runs every **Wednesday at 4 PM IST**
-- Pulls latest code, runs Maven suite, generates report
-- Optional: archive screenshots and test-output in build
+**GitHub Actions** (`.github/workflows/`):
+- `playwright-ci` — on every push / PR: compiles, installs Chromium, runs the TestNG suite headless, uploads Extent reports + surefire output as artifacts.
+- `nightly-regression` — daily at 01:30 UTC (~07:00 IST): runs the full suite and commits a test-health row to `runs/history.md`.
+
+An **Azure Pipelines** definition (`azure-pipelines.yml`) is also included for reference.
+
+> To let the nightly auto-commit count toward the contribution graph, add a fine-grained PAT (Contents: Read/Write on this repo) as a repo secret named `PUSH_TOKEN`.
 
 ---
 

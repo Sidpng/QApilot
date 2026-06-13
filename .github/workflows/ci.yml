@@ -1,0 +1,43 @@
+name: playwright-ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Compile
+        run: mvn -B -ntp compile
+
+      - name: Install Playwright browsers (chromium + deps)
+        run: >
+          mvn -B -ntp org.codehaus.mojo:exec-maven-plugin:3.1.0:java
+          -Dexec.mainClass=com.microsoft.playwright.CLI
+          -Dexec.classpathScope=test
+          -Dexec.args="install --with-deps chromium"
+
+      - name: Run TestNG suite (headless)
+        run: mvn -B -ntp test -Dheadless=true -Dbrowser=chromium
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-output
+          path: |
+            test-output/
+            target/surefire-reports/
+          if-no-files-found: ignore
+          retention-days: 14
