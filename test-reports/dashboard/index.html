@@ -5,19 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QApilot — Test Stability Report</title>
 <style>
-  body{margin:0;background:#0d1117;color:#e6edf3;
-       font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-       display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}
-  p{color:#8b949e;line-height:1.7}
-  code{color:#58a6ff}
+  :root{
+    --bg:#0d1117; --panel:#161b22; --line:#30363d; --fg:#e6edf3;
+    --mut:#8b949e; --ok:#3fb950; --bad:#f85149; --warn:#d29922; --accent:#58a6ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}
+  .wrap{max-width:1140px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:22px;margin:0 0 4px}
+  .sub{color:var(--mut);margin:0 0 24px;font-size:13px}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card .k{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+  .card .v{font-size:28px;font-weight:700;margin-top:6px}
+  .card.warn .v{color:var(--warn)}
+  .card.ok .v{color:var(--ok)}
+  table{width:100%;border-collapse:collapse;background:var(--panel);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+  tr:last-child td{border-bottom:none}
+  tr.unstable{background:rgba(210,153,34,.07)}
+  tr.failing{background:rgba(248,81,73,.05)}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  td.ok{color:var(--ok)} td.bad{color:var(--bad)} td.mut{color:var(--mut)}
+  .t .cls{display:block;color:var(--mut);font-size:11px}
+  .t .mth{display:block;font-weight:600}
+  .spark{white-space:nowrap}
+  .cell{display:inline-block;width:10px;height:16px;border-radius:2px;margin-right:2px;vertical-align:middle}
+  .cell.PASS{background:var(--ok)}
+  .cell.FAIL,.cell.ERROR{background:var(--bad)}
+  .cell.SKIP{background:var(--line)}
+  .bdg{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.03em}
+  .bdg-unstable{background:rgba(210,153,34,.18);color:var(--warn)}
+  .bdg-stable{background:rgba(63,185,80,.15);color:var(--ok)}
+  .bdg-failing{background:rgba(248,81,73,.15);color:var(--bad)}
+  .empty{text-align:center;color:var(--mut);padding:48px}
+  footer{color:var(--mut);margin-top:20px;font-size:12px}
+  a{color:var(--accent)}
+  @media(max-width:700px){.cards{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-  <div>
-    <h1>&#128202; QApilot &mdash; Test Stability Report</h1>
-    <p>Dashboard not yet generated.<br>
-       The first CI run will populate this page automatically.<br>
-       Data will appear at <code>test-reports/dashboard/index.html</code>.</p>
+<div class="wrap">
+  <h1>&#128202; QApilot &mdash; Test Stability Report</h1>
+  <p class="sub">Run-over-run pass/fail stability &middot; rolling window: last 30 runs &middot; updated 2026-06-14 06:22 UTC</p>
+  <div class="cards">
+    <div class="card"><div class="k">Runs tracked</div><div class="v">1</div></div>
+    <div class="card"><div class="k">Total tests</div><div class="v">13</div></div>
+    <div class="card warn"><div class="k">Unstable (flaky)</div><div class="v">0</div></div>
+    <div class="card ok"><div class="k">Consistently stable</div><div class="v">13</div></div>
   </div>
+  <table>
+    <thead><tr>
+      <th>Test</th>
+      <th style="text-align:right">Runs</th>
+      <th style="text-align:right">Pass</th>
+      <th style="text-align:right">Fail</th>
+      <th style="text-align:right">Skip</th>
+      <th>History (oldest &rarr; newest)</th>
+      <th style="text-align:right">Flip&nbsp;rate</th>
+      <th>Stability</th>
+    </tr></thead>
+    <tbody><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.AddToCartTest</span><span class="mth">testAddFirstProductToCart</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest</span><span class="mth">testCancelFromOverviewStep</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest</span><span class="mth">testCancelFromStepOne</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.CheckoutFlowTest</span><span class="mth">testFullCheckoutFlow</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers</span><span class="mth">testInvalidUserLogin</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers</span><span class="mth">testLockedOutUserLogin</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers</span><span class="mth">testPerformanceGlitchUserLogin</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers</span><span class="mth">testProblemUserLogin</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers</span><span class="mth">testStandardUserLogin</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest</span><span class="mth">testInvalidLoginShowsErrorMessage</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin</span><span class="mth">testStandardUserLogin</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest</span><span class="mth">testStandardUserOrderFlow</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr><tr class=""><td class="t"><span class="cls">com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest</span><span class="mth">testVisualUserOrderFlow</span></td><td class="num">1</td><td class="num ok">1</td><td class="num bad">0</td><td class="num mut">0</td><td class="spark"><span class="cell PASS" title="PASS"></span></td><td class="num">0%</td><td><span class="bdg bdg-stable">Stable</span></td></tr></tbody>
+  </table>
+  <footer>
+    <b>Flip rate</b> = pass&harr;fail transitions &divide; comparable runs.
+    A test is marked <b>Unstable</b> when it both passed and failed inside the window.
+    Data source: <code>tools/test-stability-tracker/history/runs.ndjson</code> &mdash;
+    generated by <a href="https://github.com/Sidpng/QApilot">TestStabilityTracker.java</a>.
+    No database, no UI driving, no manual steps.
+  </footer>
+</div>
 </body>
 </html>
