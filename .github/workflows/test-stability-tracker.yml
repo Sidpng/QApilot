@@ -90,7 +90,9 @@ jobs:
             echo "Nothing changed — skipping commit."
           else
             git commit -m "chore(stability): update test stability history and dashboard [skip ci]"
+            git stash
             git pull --rebase origin main
+            git stash pop
             git push --force-with-lease
           fi
 
