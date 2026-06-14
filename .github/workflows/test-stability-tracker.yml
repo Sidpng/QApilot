@@ -91,7 +91,7 @@ jobs:
           else
             git commit -m "chore(stability): update test stability history and dashboard [skip ci]"
             git pull --rebase origin main
-            git push
+            git push --force-with-lease
           fi
 
   # ── 3. Publish dashboard to GitHub Pages ───────────────────────────────────
