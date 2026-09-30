@@ -1415,3 +1415,16 @@
 {"run":"2026-09-29T06:00:14Z","commit":"50c5736","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testFullCheckoutFlow","status":"PASS","durationMs":402}
 {"run":"2026-09-29T06:00:14Z","commit":"50c5736","browser":"chromium","test":"com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest.testStandardUserOrderFlow","status":"PASS","durationMs":467}
 {"run":"2026-09-29T06:00:14Z","commit":"50c5736","browser":"chromium","test":"com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest.testVisualUserOrderFlow","status":"PASS","durationMs":477}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.SauceDemoStandardUserLogin.testStandardUserLogin","status":"PASS","durationMs":177}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.SauceDemoInvalidLoginTest.testInvalidLoginShowsErrorMessage","status":"PASS","durationMs":162}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.AddToCartTest.testAddFirstProductToCart","status":"PASS","durationMs":269}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testStandardUserLogin","status":"PASS","durationMs":170}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testLockedOutUserLogin","status":"PASS","durationMs":143}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testProblemUserLogin","status":"PASS","durationMs":162}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testPerformanceGlitchUserLogin","status":"PASS","durationMs":6666}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.LoginScenariosDifferentUsers.testInvalidUserLogin","status":"PASS","durationMs":173}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testCancelFromOverviewStep","status":"PASS","durationMs":468}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testCancelFromStepOne","status":"PASS","durationMs":373}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.Regressiontests.CheckoutFlowTest.testFullCheckoutFlow","status":"PASS","durationMs":526}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.tests.Orderplaced_tests.StandardUserOrderTest.testStandardUserOrderFlow","status":"PASS","durationMs":569}
+{"run":"2026-09-30T05:50:06Z","commit":"2ddd619","browser":"chromium","test":"com.pwj.saucedemo.tests.Orderplaced_tests.VisualUserOrderTest.testVisualUserOrderFlow","status":"PASS","durationMs":600}
